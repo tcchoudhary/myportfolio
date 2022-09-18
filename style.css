@@ -1,0 +1,688 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: 'Poppins', sans-serif;
+}
+
+img {
+    max-width: 100%;
+}
+
+ul {
+    list-style: none;
+}
+
+/* .container {
+    background-color: #fff;
+} */
+
+/* header {
+    position: fixed;
+    margin-bottom: 10px;
+    width: 100%;
+    top: 0;
+  
+    z-index: 2;
+    height: 60px;
+    background-color: #fff;
+} */
+.menu-bar {
+    position: absolute;
+    top: 15px;
+    right: 15px;
+    z-index: 3;
+    display: none;
+}
+
+.bar {
+    height: 5px;
+    width: 30px;
+    background-color: #000;
+    display: block;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: 0.5s ease;
+}
+
+#bar1 {
+    transform: translateY(-4px);
+}
+
+#bar3 {
+    transform: translateY(4px);
+}
+
+.change #bar1 {
+    opacity: 0;
+}
+
+.change #bar3 {
+    transform: translateY(-6px) rotateZ(45deg);
+}
+
+.change #bar2 {
+    transform: translateY(4px) rotateZ(-45deg);
+}
+
+nav {
+    box-shadow: 0 0.5rem 1rem rgb(0 0 0 / 15%);
+    position: fixed;
+    top: 0;
+    text-align: center;
+    width: 100%;
+    background-color: #fff;
+    z-index: 2;
+}
+
+.menu li {
+    display: inline-block;
+    padding: 20px 10px;
+}
+
+nav a {
+    color: #000;
+    text-decoration: none;
+    display: block;
+    font-size: 18px;
+}
+
+nav li a:hover {
+    border-bottom: 2px solid #d9e26e;
+
+}
+
+.menu li .active {
+    color: #b9e26e;
+    background-color: transparent;
+    transition: 1s;
+    border-bottom: 2px solid #d9e26e !important;
+    padding-bottom: 2px;
+}
+
+.infocontainer {
+    display: flex;
+    justify-content: space-around;
+    padding-top: 44px;
+}
+
+.devinfo {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    font-family: 'Source Code Pro', monospace;
+}
+
+.hello {
+    font-size: 50px;
+}
+
+.name {
+    font-size: 40px;
+    font-weight: bold;
+    font-family: 'Merriweather', serif;
+}
+
+.autotyping {
+    font-family: 'Playfair Display', serif;
+    color: red;
+    font-size: 2.5em;
+    font-weight: 800;
+}
+
+.autotyping>span {
+    color: #FFDC00;
+    font-size: 1.2em;
+    font-weight: bold;
+    font-family: 'Merriweather', serif;
+}
+
+.moreabout {
+    font-size: 20px;
+}
+
+.buttons {
+    margin-top: 30px;
+}
+
+.buttons button {
+    padding: 10px 20px;
+    color: #FFF;
+    background-color: rgb(221, 46, 46);
+    margin: 10px 10px;
+    border: none;
+    font-size: 18px;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #FFDC00;
+    border-radius: 20px;
+    transition: all 3s;
+    color: #000;
+}
+
+.buttons .btn {
+    background-color: transparent;
+    color: red;
+    border: 2px solid red;
+    padding: 8px;
+}
+
+.buttons .btn:hover {
+    background-color: #FFDC00;
+    border-radius: 20px;
+    transition: all 3s;
+    color: #000;
+    border: none;
+}
+
+.devpic img {
+    height: 100vh;
+}
+
+.devpic img:hover {
+    filter: grayscale();
+}
+
+.devide-2 {
+    padding:30px;
+}
+
+.half-2 {
+    padding-left: 10px;
+}
+
+.half-1 {
+    padding-right: 10px;
+}
+
+.half-1 img {
+    height: 100%;
+}
+
+.half-2 h2 {
+    display: inline-block;
+    width: 30%;
+}
+
+.half-2 li {
+    padding: 5px 0;
+}
+
+.half-2 h4 {
+    font-size: 14px;
+    font-weight: bold;
+    color: #d9e26e;
+    padding: 10px 0;
+}
+
+.half-2 h1 {
+    padding: 10px 0;
+    font-size: 32px;
+    font-weight: bold;
+}
+
+.half-2 p {
+    font: 400;
+    font-size: 15px;
+    line-height: 1.7;
+    padding-bottom: 15px;
+}
+
+.half-2 .form-type {
+    color: gray;
+    font-size: 14px;
+    font-weight: 600;
+}
+
+.myintrest {
+    display: flex;
+    margin-top: 20px;
+}
+
+.containt {
+    width: 25%;
+    border-left: 2px solid #b1b493;
+    padding-left: 10px;
+    display: flex;
+    align-items: center;
+}
+
+.febicon {
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    background: #b1b493;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 15px;
+}
+
+.text {
+    font-weight: 600;
+    padding-left: 5px;
+}
+
+.skill-container {
+    padding-bottom: 20px;
+    background-color: #f1f1f1;
+}
+
+.divid-6 {
+    display: flex;
+}
+
+.shadow {
+    flex: 33%;
+    background-color: #fff;
+    text-align: center;
+    margin: 10px;
+    box-shadow: 0 0.5rem 1rem rgb(0 0 0 / 15%);
+}
+
+.shadow h4 {
+    padding: 10px 0;
+    font-size: 22px;
+}
+
+.flex {
+    display: flex;
+    justify-content: space-around;
+    font-size: 18px;
+    font-weight: bold;
+    padding: 10px 0;
+}
+
+.flex .border {
+    border-left: 1px solid #b1b493;
+}
+
+.sec-divid {
+    padding: 10px 0;
+}
+
+/* .service-container {
+   clear: both;
+} */
+
+.span-heading {
+    display: block;
+    text-align: center;
+    font-size: 20px;
+    color: gray;
+}
+
+.bigg {
+    font-size: 44px;
+    text-align: center;
+    padding: 20px 0;
+}
+
+.pra {
+    line-height: 2;
+    text-align: center;
+    color: gray;
+    font-size: 20PX;
+    padding-bottom: 20px;
+}
+
+.service-heading h3 {
+    padding: 10px 0;
+    font-size: 20px;
+    font-weight: bold;
+}
+
+.awsome-icon-hover img {
+    width: 30%;
+}
+
+.shadow:hover {
+    box-shadow: none;
+}
+
+.img {
+    margin: 10px;
+}
+
+.img img {
+    box-shadow: 0 0.5rem 1rem rgb(0 0 0 / 15%) !important;
+}
+
+.img img:hover {
+    filter: grayscale();
+    box-shadow: none;
+}
+
+/* .contact {
+    clear: both;
+} */
+
+input {
+    font-size: 14px;
+    outline: none;
+    width: 100%;
+    margin: 10px 0;
+    padding: 20px 10px;
+}
+
+.m-left {
+    margin-left: 5px;
+}
+
+.m-right {
+    margin-right: 5px;
+}
+
+textarea {
+    outline: none;
+    font-size: 14px;
+    padding: 10px;
+    height: 100px;
+    margin: 10px 0;
+    width: 100%;
+}
+
+.form-div {
+    background: #f1f1f1;
+    flex-basis: 50%;
+    padding: 30px 30px;
+}
+
+form button {
+    /* margin: 10px; */
+    padding: 15px 50px;
+    background-color: #b9e26e;
+    color: #fff;
+    border-style: none;
+    font-size: 14px;
+}
+
+.address-bar {
+    padding: 0 40px;
+}
+
+.address-bar span {
+    font-size: 11px;
+    color: gray;
+    vertical-align: middle;
+    padding-left: 5px;
+}
+
+h2.form-heading {
+    padding: 20px 0 0 0;
+    font-size: 18px;
+}
+
+span.form-span {
+    font-size: 14px;
+    color: #b1b493;
+    padding-left: 5px;
+}
+
+.address-bar .fa-solid {
+    background: #d9e26e;
+    height: 50px;
+    width: 50px;
+    border-radius: 50%;
+    padding: 10px;
+    vertical-align: middle;
+    margin-right: 10px;
+    font-size: 25px;
+}
+
+.full-fottor {
+    background-color: #343a40;
+    font-size: 22PX;
+}
+
+.link {
+    flex: 33.33%;
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.address {
+    display: flex;
+    flex-direction: column;
+    padding-top: 30px;
+}
+
+.link h2 {
+    color: #fff;
+    padding-left: 70px;
+    text-align: left;
+}
+
+.form-head {
+    display: flex;
+    align-items: center;
+    padding-bottom: 15px;
+    font-size: 1em;
+}
+
+.link ul {
+    padding-top: 25px;
+}
+
+.link a {
+    text-decoration: none;
+    color: #fff;
+}
+
+.link li {
+    text-align: left;
+    padding-left: 70px;
+}
+
+.link ul li a:hover {
+    color: #FFDC00;
+    transition: 1.5s;
+    font-size: 20px;
+}
+
+.media ul {
+    display: flex;
+}
+
+.media li {
+    font-size: 18px;
+}
+
+.media .fa-brands {
+    font-size: 1.8em;
+    color: #fff;
+    cursor: pointer;
+}
+
+@media screen and (max-width: 950px){
+    .form-flex{
+        display: block;
+    }
+    .address-bar span{
+        font-size: 14px;
+    }
+
+
+}
+@media screen and (max-width: 833px){
+    .pra{
+        font-size: 16px;
+    }
+    .form-flex{
+        display: block;
+    }
+    .service-heading h3{
+        font-size: 18px;
+    }
+    form button{
+        padding: 10px;
+    }
+}
+
+@media screen and (max-width: 700px) {
+    .menu-bar{
+        display: block;
+    }
+    nav{
+        background-color: #a98181;
+        display: none;
+    }
+    .menu{
+        height: 100vh;
+    }
+    .menu li{
+        display: block;
+    }
+    .menu a{
+        color: #fff;
+    }
+    .menu a{
+        display: inline-block;
+       
+    }
+
+    .half-2 h1{
+        padding: 0;
+    }
+    .half-2 h2{
+        width: 40%;
+    }
+    .divid-6{
+        flex-direction: column;
+        display: flex;
+    }
+    .half-1 img{
+        display: none;
+    }
+    .address-bar{
+        padding: 0;
+    }
+    .media-flex{
+        display: flex !important;
+        flex-direction: row;
+    }
+    ul{
+        height: auto;
+    }
+    .link h2{
+        padding: 0;
+    }
+    .link li{
+        height: auto;
+        padding: 0;
+    }
+    .form-head{
+        display: block;
+    }
+    .devpic{
+        display: none;
+    }
+    .m-right {
+        margin-right: 0px;
+    }
+    .m-left {
+         margin-left: 0px; 
+    }
+    form button{
+        padding: 10px 20px;
+    }
+    .fa-solid{
+        display: none;
+    }
+    .media{
+        display: none;
+    }
+}
+
+@media screen and (max-width: 600px){
+    .address-bar .fa-solid{
+    height: 40px;
+    width: 40px;
+    padding: 10px;
+    font-size: 20px;
+    }
+    h2.form-heading {
+        font-size: 15px;
+    }
+    .link h2{
+        font-size: 18px;
+        text-align: center;
+    }
+    .link ul{
+        font-size: 14px;
+        padding: 0;
+    }
+    .link li{
+        text-align: center;
+    }
+    .form-head{
+        text-align: left !important;
+    }
+    .address{
+        display: none;
+    }
+    .media ul{
+        flex-direction: column;
+    }
+    .media ul li{
+        font-size: 15px !important;
+    }
+}
+
+@media screen and (max-width: 459px){
+    .hello{
+        font-size: 20px;
+    }
+    .name{
+        font-size: 30px;
+    }
+    .autotyping{
+        font-size: 20px;
+    }
+    .buttons button{
+        padding: 10px;
+        margin: 0;
+    }
+    .half-2 h2{
+        font-size: 14px;
+        width: 35%;
+    }
+    span.form-type {
+        font-size: 12px !important;
+    }
+    .febicon{
+        display: none;
+    }
+    .bigg{
+        font-size: 27px;
+    }
+    .span-heading{
+        font-size: 18px;
+    }
+    .pra{
+        font-size: 14px;
+    }
+    .address-bar .fa-solid {
+        background: none;
+        height: auto; 
+        width: auto;
+        border-radius: 0%;
+        padding: 0px;
+        vertical-align: middle;
+        margin-right: 5px;
+    }
+    .address-bar span {
+        font-size: 10px;
+    }
+    .form-heading{
+        font-size: 14px;
+    }
+}
