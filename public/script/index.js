@@ -1,9 +1,9 @@
 
 
 var typed = new Typed(".typing_text", {
-    strings: ["Developer",  "Designer", "Freelancer"],
-    typeSpeed: 100,
-    backSpeed: 60,
+    strings: ["Developer",  "Designer", "Freelancer","Content Writer","Public Speaker"],
+    typeSpeed: 200,
+    backSpeed: 40,
     loop: true,
     cursorChar: '|️',
 });
@@ -26,6 +26,12 @@ var typed = new Typed(".typing_text", {
 function onclickmenu(){
     document.getElementById("menu").classList.toggle("change");
 }
-function navbar(){
-    document.getElementById('navbar').classList.toggle("navbar");
-}
+// function navbar(){
+    // document.getElementById('navbar').classList.toggle("navbar");
+// }
+// 
+//  function onclickmenu () {
+    // var element = document.getElementById("menubar");
+    // element.classList.toggle("navbar");
+    // alert("okay")
+//  }

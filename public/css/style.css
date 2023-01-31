@@ -107,9 +107,13 @@ nav li a:hover {
 }
 
 .infocontainer {
-    display: flex;
-    justify-content: space-around;
+  /* display: grid;
+  grid-template-columns: 1fr 1fr;
+  column-gap: 10px; */
+  display: flex;
+  justify-content: space-between;
     padding-top: 44px;
+    margin: 0 20px;
 }
 
 .devinfo {
